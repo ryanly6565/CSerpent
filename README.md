@@ -64,6 +64,8 @@ To run an example suite and compare results, do:
 run.sh
 The examples are in the example folder, while the output C is in the target_output folder.
 
+To compile your own Python code, add a python file to the examples folder then do run.sh.
+
 To view an example of our error detection system, do:
 run.sh -error
 

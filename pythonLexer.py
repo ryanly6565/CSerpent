@@ -169,9 +169,6 @@ lexer.indent_stack = [0]
 lexer.at_line_start = True
 lexer.dedent_queue = []
 
-# Cite: This was done with the help of AI, as I couldn't figure out a way to do this just by myself
-#       Michael said that he doesn't mind if we use AI. I essentially just prompted AI to help me figure out how to flush the tokens properly
-# Wrap token() to handle queued DEDENTs and EOF
 _original_token = lexer.token
 def token_wrapper():
     # If we have queued DEDENTs, return them first
