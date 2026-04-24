@@ -1,0 +1,198 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "AssignStmt",
+      "name": "z",
+      "expr": {
+        "type": "Constant",
+        "value": true
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "a",
+      "expr": {
+        "type": "List",
+        "elements": [
+          {
+            "type": "Constant",
+            "value": 1
+          },
+          {
+            "type": "Constant",
+            "value": 3
+          },
+          {
+            "type": "Constant",
+            "value": 69
+          },
+          {
+            "type": "Variable",
+            "name": "z"
+          },
+          {
+            "type": "List",
+            "elements": [
+              {
+                "type": "Constant",
+                "value": 5
+              },
+              {
+                "type": "Constant",
+                "value": 50
+              },
+              {
+                "type": "Constant",
+                "value": 500
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "a"
+      }
+    },
+    {
+      "type": "RemoveStmt",
+      "list": {
+        "type": "Variable",
+        "name": "a"
+      },
+      "value": {
+        "type": "Constant",
+        "value": 69
+      }
+    },
+    {
+      "type": "RemoveStmt",
+      "list": {
+        "type": "Variable",
+        "name": "a"
+      },
+      "value": {
+        "type": "Variable",
+        "name": "z"
+      }
+    },
+    {
+      "type": "PopStmt",
+      "list": {
+        "type": "Variable",
+        "name": "a"
+      },
+      "index": {
+        "type": "Constant",
+        "value": 0
+      }
+    },
+    {
+      "type": "AppendStmt",
+      "list": {
+        "type": "Variable",
+        "name": "a"
+      },
+      "value": {
+        "type": "Constant",
+        "value": 200
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "should_be_three",
+      "expr": {
+        "type": "Constant",
+        "value": 0
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "should_be_three",
+      "expr": {
+        "type": "LenStmt",
+        "list": {
+          "type": "Variable",
+          "name": "a"
+        }
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "should_be_three"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "a"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "List",
+        "elements": [
+          {
+            "type": "Constant",
+            "value": 1
+          },
+          {
+            "type": "Constant",
+            "value": 2
+          },
+          {
+            "type": "Constant",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "lst2",
+      "expr": {
+        "type": "List",
+        "elements": [
+          {
+            "type": "Constant",
+            "value": 1
+          },
+          {
+            "type": "Constant",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "should_be_two",
+      "expr": {
+        "type": "PopStmt",
+        "list": {
+          "type": "Variable",
+          "name": "lst2"
+        },
+        "index": {
+          "type": "Constant",
+          "value": 1
+        }
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "should_be_two"
+      }
+    }
+  ]
+}

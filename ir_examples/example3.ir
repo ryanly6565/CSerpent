@@ -1,0 +1,23 @@
+    goto _L1
+func:
+    BeginFunc
+    Param a
+    Param b
+    _t1 := a + b
+    c := _t1
+    ret := c
+    EndFunc
+_L1:
+    PushParam 1
+    PushParam 2
+    FuncCall func
+    PopParams 2
+    _t2 := ret
+    d := _t2
+    Print d
+    PushParam 1
+    PushParam 5
+    FuncCall func
+    PopParams 2
+    _t3 := ret
+    Print _t3

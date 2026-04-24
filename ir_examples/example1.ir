@@ -1,0 +1,18 @@
+    integer_var := 9
+    boolean_var := True
+    _t1 := -10
+    unary_op_var := _t1
+    _t2 := -10
+    _t3 := _t2 + 3
+    binary_op_var := _t3
+    _t4 := integer_var * 19
+    complex_op_var := _t4
+    _t5 := True and False
+    _t6 := _t5 or False
+    bool2 := _t6
+    Print integer_var
+    Print boolean_var
+    Print unary_op_var
+    Print binary_op_var
+    Print complex_op_var
+    Print bool2

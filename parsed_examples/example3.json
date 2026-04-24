@@ -1,0 +1,83 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "MethodDecl",
+      "name": "func",
+      "params": [
+        {
+          "type": "Parameter",
+          "name": "a"
+        },
+        {
+          "type": "Parameter",
+          "name": "b"
+        }
+      ],
+      "body": [
+        {
+          "type": "AssignStmt",
+          "name": "c",
+          "expr": {
+            "type": "BinOp",
+            "op": "+",
+            "left": {
+              "type": "Variable",
+              "name": "a"
+            },
+            "right": {
+              "type": "Variable",
+              "name": "b"
+            }
+          }
+        }
+      ],
+      "return_expr": {
+        "type": "Variable",
+        "name": "c"
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "d",
+      "expr": {
+        "type": "FuncCall",
+        "name": "func",
+        "args": [
+          {
+            "type": "Constant",
+            "value": 1
+          },
+          {
+            "type": "Constant",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "d"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "FuncCall",
+        "name": "func",
+        "args": [
+          {
+            "type": "Constant",
+            "value": 1
+          },
+          {
+            "type": "Constant",
+            "value": 5
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+    x := 5
+    i := 1
+_L1:
+    if !(i < x) goto _L2
+    Print i
+    i := i + 5
+    goto _L1
+_L2:
+    i := 0
+_L3:
+    if !(i < 5) goto _L4
+    Print i
+    i := i + 1
+    goto _L3
+_L4:
+    i := 0
+_L5:
+    if !(i < 10) goto _L6
+    Print i
+    i := i + 1
+    goto _L5
+_L6:
+    i := 0
+_L7:
+    if !(i < 10) goto _L8
+    Print i
+    i := i + 2
+    goto _L7
+_L8:

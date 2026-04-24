@@ -1,0 +1,23 @@
+    goto _L1
+appendTwice:
+    BeginFunc
+    Param c
+    Param b
+    _t1 := []
+    Append _t1 1
+    d := _t1
+    Append c b
+    Append c b
+    ret := 0
+    EndFunc
+_L1:
+    _t2 := []
+    a := _t2
+    Append a 1
+    PushParam a
+    PushParam 2
+    FuncCall appendTwice
+    PopParams 2
+    _t3 := ret
+    b := _t3
+    Print a

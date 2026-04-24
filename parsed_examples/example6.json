@@ -1,0 +1,94 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "MethodDecl",
+      "name": "func",
+      "params": [
+        {
+          "type": "Parameter",
+          "name": "a"
+        },
+        {
+          "type": "Parameter",
+          "name": "b"
+        }
+      ],
+      "body": [
+        {
+          "type": "AssignStmt",
+          "name": "c",
+          "expr": {
+            "type": "BinOp",
+            "op": "+",
+            "left": {
+              "type": "Variable",
+              "name": "a"
+            },
+            "right": {
+              "type": "Variable",
+              "name": "b"
+            }
+          }
+        },
+        {
+          "type": "ForStmt",
+          "var": "i",
+          "a1": null,
+          "a2": {
+            "type": "Constant",
+            "value": 3
+          },
+          "a3": null,
+          "body": [
+            {
+              "type": "IfStmt",
+              "condition": {
+                "type": "BinOp",
+                "op": "==",
+                "left": {
+                  "type": "Variable",
+                  "name": "i"
+                },
+                "right": {
+                  "type": "Constant",
+                  "value": 1
+                }
+              },
+              "true_body": [
+                {
+                  "type": "PrintStmt",
+                  "expr": {
+                    "type": "Constant",
+                    "value": true
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "return_expr": {
+        "type": "Variable",
+        "name": "c"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "FuncCall",
+        "name": "func",
+        "args": [
+          {
+            "type": "Constant",
+            "value": 1
+          },
+          {
+            "type": "Constant",
+            "value": 2
+          }
+        ]
+      }
+    }
+  ]
+}

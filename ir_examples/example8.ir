@@ -1,0 +1,9 @@
+    _t1 := []
+    lst := _t1
+    i := 0
+_L1:
+    if !(i < 100000) goto _L2
+    Append lst i
+    i := i + 1
+    goto _L1
+_L2:

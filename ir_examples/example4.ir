@@ -1,0 +1,34 @@
+    z := True
+    _t1 := []
+    Append _t1 1
+    Append _t1 3
+    Append _t1 69
+    Append _t1 z
+    _t2 := []
+    Append _t2 5
+    Append _t2 50
+    Append _t2 500
+    Append _t1 _t2
+    a := _t1
+    Print a
+    Remove a 69
+    Remove a z
+    Pop a 0
+    Append a 200
+    should_be_three := 0
+    _t3 := Length a
+    should_be_three := _t3
+    Print should_be_three
+    Print a
+    _t4 := []
+    Append _t4 1
+    Append _t4 2
+    Append _t4 3
+    Print _t4
+    _t5 := []
+    Append _t5 1
+    Append _t5 2
+    lst2 := _t5
+    _t6 := Pop lst2 1
+    should_be_two := _t6
+    Print should_be_two

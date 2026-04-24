@@ -1,0 +1,36 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "AssignStmt",
+      "name": "lst",
+      "expr": {
+        "type": "List",
+        "elements": []
+      }
+    },
+    {
+      "type": "ForStmt",
+      "var": "i",
+      "a1": null,
+      "a2": {
+        "type": "Constant",
+        "value": 100000
+      },
+      "a3": null,
+      "body": [
+        {
+          "type": "AppendStmt",
+          "list": {
+            "type": "Variable",
+            "name": "lst"
+          },
+          "value": {
+            "type": "Variable",
+            "name": "i"
+          }
+        }
+      ]
+    }
+  ]
+}

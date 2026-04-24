@@ -1,0 +1,104 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "MethodDecl",
+      "name": "appendTwice",
+      "params": [
+        {
+          "type": "Parameter",
+          "name": "c"
+        },
+        {
+          "type": "Parameter",
+          "name": "b"
+        }
+      ],
+      "body": [
+        {
+          "type": "AssignStmt",
+          "name": "d",
+          "expr": {
+            "type": "List",
+            "elements": [
+              {
+                "type": "Constant",
+                "value": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "AppendStmt",
+          "list": {
+            "type": "Variable",
+            "name": "c"
+          },
+          "value": {
+            "type": "Variable",
+            "name": "b"
+          }
+        },
+        {
+          "type": "AppendStmt",
+          "list": {
+            "type": "Variable",
+            "name": "c"
+          },
+          "value": {
+            "type": "Variable",
+            "name": "b"
+          }
+        }
+      ],
+      "return_expr": {
+        "type": "Constant",
+        "value": 0
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "a",
+      "expr": {
+        "type": "List",
+        "elements": []
+      }
+    },
+    {
+      "type": "AppendStmt",
+      "list": {
+        "type": "Variable",
+        "name": "a"
+      },
+      "value": {
+        "type": "Constant",
+        "value": 1
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "b",
+      "expr": {
+        "type": "FuncCall",
+        "name": "appendTwice",
+        "args": [
+          {
+            "type": "Variable",
+            "name": "a"
+          },
+          {
+            "type": "Constant",
+            "value": 2
+          }
+        ]
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "a"
+      }
+    }
+  ]
+}

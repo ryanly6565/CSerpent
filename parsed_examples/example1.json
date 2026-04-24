@@ -1,0 +1,135 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "AssignStmt",
+      "name": "integer_var",
+      "expr": {
+        "type": "Constant",
+        "value": 9
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "boolean_var",
+      "expr": {
+        "type": "Constant",
+        "value": true
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "unary_op_var",
+      "expr": {
+        "type": "UnaryOp",
+        "op": "-",
+        "operand": {
+          "type": "Constant",
+          "value": 10
+        }
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "binary_op_var",
+      "expr": {
+        "type": "BinOp",
+        "op": "+",
+        "left": {
+          "type": "UnaryOp",
+          "op": "-",
+          "operand": {
+            "type": "Constant",
+            "value": 10
+          }
+        },
+        "right": {
+          "type": "Constant",
+          "value": 3
+        }
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "complex_op_var",
+      "expr": {
+        "type": "BinOp",
+        "op": "*",
+        "left": {
+          "type": "Variable",
+          "name": "integer_var"
+        },
+        "right": {
+          "type": "Constant",
+          "value": 19
+        }
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "bool2",
+      "expr": {
+        "type": "BinOp",
+        "op": "or",
+        "left": {
+          "type": "BinOp",
+          "op": "and",
+          "left": {
+            "type": "Constant",
+            "value": true
+          },
+          "right": {
+            "type": "Constant",
+            "value": false
+          }
+        },
+        "right": {
+          "type": "Constant",
+          "value": false
+        }
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "integer_var"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "boolean_var"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "unary_op_var"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "binary_op_var"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "complex_op_var"
+      }
+    },
+    {
+      "type": "PrintStmt",
+      "expr": {
+        "type": "Variable",
+        "name": "bool2"
+      }
+    }
+  ]
+}

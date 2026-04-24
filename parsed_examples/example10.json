@@ -1,0 +1,69 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "AssignStmt",
+      "name": "i",
+      "expr": {
+        "type": "BinOp",
+        "op": "+",
+        "left": {
+          "type": "Constant",
+          "value": 7
+        },
+        "right": {
+          "type": "Constant",
+          "value": 10
+        }
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "j",
+      "expr": {
+        "type": "BinOp",
+        "op": "*",
+        "left": {
+          "type": "Variable",
+          "name": "i"
+        },
+        "right": {
+          "type": "Constant",
+          "value": 64
+        }
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "k",
+      "expr": {
+        "type": "BinOp",
+        "op": "*",
+        "left": {
+          "type": "Variable",
+          "name": "j"
+        },
+        "right": {
+          "type": "Constant",
+          "value": 0
+        }
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "l",
+      "expr": {
+        "type": "BinOp",
+        "op": "+",
+        "left": {
+          "type": "Variable",
+          "name": "j"
+        },
+        "right": {
+          "type": "Constant",
+          "value": 0
+        }
+      }
+    }
+  ]
+}

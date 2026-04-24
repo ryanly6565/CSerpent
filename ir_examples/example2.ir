@@ -1,0 +1,30 @@
+    age := 18
+    change := 0
+    _t1 := age >= 18
+    _t2 := age < 35
+    if !(_t1 and _t2) goto _L1
+    change := 1
+    Print 1
+    if !(1) goto _L3
+    change := 2
+    Print 2
+    goto _L4
+_L3:
+_L4:
+    goto _L2
+_L1:
+    if !(age < 2) goto _L5
+    change := 3
+    Print 3
+    goto _L6
+_L5:
+    if !(age < 5) goto _L7
+    change := 5
+    Print 5
+    goto _L8
+_L7:
+    change := 1000
+    Print 1000
+_L8:
+_L6:
+_L2:

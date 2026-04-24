@@ -1,0 +1,104 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "AssignStmt",
+      "name": "x",
+      "expr": {
+        "type": "Constant",
+        "value": 5
+      }
+    },
+    {
+      "type": "ForStmt",
+      "var": "i",
+      "a1": {
+        "type": "Constant",
+        "value": 1
+      },
+      "a2": {
+        "type": "Variable",
+        "name": "x"
+      },
+      "a3": {
+        "type": "Constant",
+        "value": 5
+      },
+      "body": [
+        {
+          "type": "PrintStmt",
+          "expr": {
+            "type": "Variable",
+            "name": "i"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ForStmt",
+      "var": "i",
+      "a1": null,
+      "a2": {
+        "type": "Constant",
+        "value": 5
+      },
+      "a3": null,
+      "body": [
+        {
+          "type": "PrintStmt",
+          "expr": {
+            "type": "Variable",
+            "name": "i"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ForStmt",
+      "var": "i",
+      "a1": {
+        "type": "Constant",
+        "value": 0
+      },
+      "a2": {
+        "type": "Constant",
+        "value": 10
+      },
+      "a3": null,
+      "body": [
+        {
+          "type": "PrintStmt",
+          "expr": {
+            "type": "Variable",
+            "name": "i"
+          }
+        }
+      ]
+    },
+    {
+      "type": "ForStmt",
+      "var": "i",
+      "a1": {
+        "type": "Constant",
+        "value": 0
+      },
+      "a2": {
+        "type": "Constant",
+        "value": 10
+      },
+      "a3": {
+        "type": "Constant",
+        "value": 2
+      },
+      "body": [
+        {
+          "type": "PrintStmt",
+          "expr": {
+            "type": "Variable",
+            "name": "i"
+          }
+        }
+      ]
+    }
+  ]
+}

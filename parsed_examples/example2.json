@@ -1,0 +1,178 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "AssignStmt",
+      "name": "age",
+      "expr": {
+        "type": "Constant",
+        "value": 18
+      }
+    },
+    {
+      "type": "AssignStmt",
+      "name": "change",
+      "expr": {
+        "type": "Constant",
+        "value": 0
+      }
+    },
+    {
+      "type": "IfStmt",
+      "condition": {
+        "type": "BinOp",
+        "op": "and",
+        "left": {
+          "type": "BinOp",
+          "op": ">=",
+          "left": {
+            "type": "Variable",
+            "name": "age"
+          },
+          "right": {
+            "type": "Constant",
+            "value": 18
+          }
+        },
+        "right": {
+          "type": "BinOp",
+          "op": "<",
+          "left": {
+            "type": "Variable",
+            "name": "age"
+          },
+          "right": {
+            "type": "Constant",
+            "value": 35
+          }
+        }
+      },
+      "true_body": [
+        {
+          "type": "AssignStmt",
+          "name": "change",
+          "expr": {
+            "type": "Constant",
+            "value": 1
+          }
+        },
+        {
+          "type": "PrintStmt",
+          "expr": {
+            "type": "Constant",
+            "value": 1
+          }
+        },
+        {
+          "type": "IfStmt",
+          "condition": {
+            "type": "Constant",
+            "value": 1
+          },
+          "true_body": [
+            {
+              "type": "AssignStmt",
+              "name": "change",
+              "expr": {
+                "type": "Constant",
+                "value": 2
+              }
+            },
+            {
+              "type": "PrintStmt",
+              "expr": {
+                "type": "Constant",
+                "value": 2
+              }
+            }
+          ]
+        }
+      ],
+      "false_body": [
+        {
+          "type": "IfStmt",
+          "condition": {
+            "type": "BinOp",
+            "op": "<",
+            "left": {
+              "type": "Variable",
+              "name": "age"
+            },
+            "right": {
+              "type": "Constant",
+              "value": 2
+            }
+          },
+          "true_body": [
+            {
+              "type": "AssignStmt",
+              "name": "change",
+              "expr": {
+                "type": "Constant",
+                "value": 3
+              }
+            },
+            {
+              "type": "PrintStmt",
+              "expr": {
+                "type": "Constant",
+                "value": 3
+              }
+            }
+          ],
+          "false_body": [
+            {
+              "type": "IfStmt",
+              "condition": {
+                "type": "BinOp",
+                "op": "<",
+                "left": {
+                  "type": "Variable",
+                  "name": "age"
+                },
+                "right": {
+                  "type": "Constant",
+                  "value": 5
+                }
+              },
+              "true_body": [
+                {
+                  "type": "AssignStmt",
+                  "name": "change",
+                  "expr": {
+                    "type": "Constant",
+                    "value": 5
+                  }
+                },
+                {
+                  "type": "PrintStmt",
+                  "expr": {
+                    "type": "Constant",
+                    "value": 5
+                  }
+                }
+              ],
+              "false_body": [
+                {
+                  "type": "AssignStmt",
+                  "name": "change",
+                  "expr": {
+                    "type": "Constant",
+                    "value": 1000
+                  }
+                },
+                {
+                  "type": "PrintStmt",
+                  "expr": {
+                    "type": "Constant",
+                    "value": 1000
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

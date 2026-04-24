@@ -1,0 +1,62 @@
+{
+  "type": "Program",
+  "statements": [
+    {
+      "type": "IfStmt",
+      "condition": {
+        "type": "BinOp",
+        "op": "and",
+        "left": {
+          "type": "Constant",
+          "value": true
+        },
+        "right": {
+          "type": "Constant",
+          "value": false
+        }
+      },
+      "true_body": [
+        {
+          "type": "PrintStmt",
+          "expr": {
+            "type": "Constant",
+            "value": 2
+          }
+        }
+      ],
+      "false_body": [
+        {
+          "type": "PrintStmt",
+          "expr": {
+            "type": "Constant",
+            "value": 1
+          }
+        },
+        {
+          "type": "IfStmt",
+          "condition": {
+            "type": "BinOp",
+            "op": ">",
+            "left": {
+              "type": "Constant",
+              "value": 1
+            },
+            "right": {
+              "type": "Constant",
+              "value": 2
+            }
+          },
+          "true_body": [
+            {
+              "type": "PrintStmt",
+              "expr": {
+                "type": "Constant",
+                "value": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
